@@ -182,3 +182,27 @@ def game_dict():
             ]
         }
     }
+
+   
+
+def num_points_per_game(player_name):
+    for team in game_dict().values():
+        for player in team["players"]:
+            if player["name"] == player_name:
+                return player["points_per_game"]
+    # Return a default value or handle the case where the player is not found
+    return None
+
+
+def player_age(input_name):
+    pass
+
+
+
+print(num_points_per_game("Kristaps Porzingis"))
+
+
+
+    
+
+
